@@ -11,7 +11,7 @@ body {
 #viewerDiv {
   height: 480px; 
   width: 860px; 
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   overflow: hidden; 
   position: relative;
 }
@@ -29,7 +29,7 @@ section {
   padding-left: 10px;
 }
 
-h4 {
+h4, h3 {
   color: white;
 }
 
@@ -42,8 +42,8 @@ h4 {
       div#main {
           max-width: 560px;
           background: #2b303b;
-          border-radius: 5px;
-          height: 400px;
+          /*border-radius: 5px;
+          height: 400px;*/
           -webkit-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.59);
           -moz-box-shadow:    0px 0px 13px 0px rgba(50, 50, 50, 0.59);
           box-shadow:         0px 0px 13px 0px rgba(50, 50, 50, 0.59);
@@ -68,13 +68,20 @@ h4 {
         margin-bottom: 0;
         line-height: 21px;
       }
-      #bar {
-        height: 30px;
-        max-width: 560px;
-        background: black;
-        border-radius: 5px;
-      }
+
       #content {
         padding: 20px;
         height: 100%;
+      }
+
+      div > .container {
+        font-family: 'Inconsolata', monospace;
+        font-size: 14px;
+        color: #dfe1e8;
+        background: #343d46;
+      }
+
+      .container{
+        display: -webkit-flex;
+
       }

@@ -30,7 +30,7 @@ var App = React.createClass({
       this.addHistory("README.md");
   },
   showWelcomeMsg: function() {
-      this.addHistory("Hello, I'm Prakhar Srivastav, a graduate student in the Computer Science department (Machine Learning track).");
+      this.addHistory("Welcome, to Forge Viewer CLI).");
       this.addHistory("Type `help` to see what all commands are available");
   },
   catFile: function(arg) {
