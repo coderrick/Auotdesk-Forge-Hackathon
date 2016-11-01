@@ -18,7 +18,7 @@ var App = React.createClass({
         'ls'    : this.listFiles,
         'intro' : this.showWelcomeMsg,
         'help'  : this.showHelp,
-        'view-cube'   : this.view-cube,
+        'view-cube': this.view-cube,
         'explode': this.explode,
         'dimensions': this.dimensions,
       }
@@ -32,12 +32,7 @@ var App = React.createClass({
       this.addHistory("Type `help` to see what all commands are available");
   },
   view_cube: function(arg) {
-      if (arg === "README.md") {
-          this.addHistory('### REACT TERM');
-          this.addHistory("type `explode` to view the explode code");
-      } else {
-          this.addHistory("view-cube: " +  arg + ": No such file or directory");
-      }
+    this.addHistory("Adding view cube to viewer");
   },
   openLink: function(link) {
       return function() {
