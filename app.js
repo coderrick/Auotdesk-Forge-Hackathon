@@ -1,5 +1,5 @@
 var React = require('react');
-
+var api = require('./www/js/index');
 var App = React.createClass({
   getInitialState: function() {
       return {
@@ -18,11 +18,9 @@ var App = React.createClass({
         'ls'    : this.listFiles,
         'intro' : this.showWelcomeMsg,
         'help'  : this.showHelp,
-        'cat'   : this.catFile,
-        'source': this.openLink('https://github.com/prakhar1989/react-term/blob/master/src/app.js'),
-        'github': this.openLink('http://github.com/prakhar1989'),
-        'blog'  : this.openLink('http://prakhar.me'),
-        'resume': this.openLink('https://github.com/prakhar1989/cv/blob/master/Resume.pdf')
+        'view-cube'   : this.view-cube,
+        'explode': this.explode,
+        'dimensions': this.dimensions,
       }
     });
   },
@@ -33,15 +31,12 @@ var App = React.createClass({
       this.addHistory("Welcome, to Forge Viewer CLI).");
       this.addHistory("Type `help` to see what all commands are available");
   },
-  catFile: function(arg) {
+  view_cube: function(arg) {
       if (arg === "README.md") {
           this.addHistory('### REACT TERM');
-          this.addHistory("A couple of days back, I got an email from Columbia (the university that I'm stated to join) informing me that my new email ID and other student IT services were ready. Hosting my own webpage on a university's domain had long been a wish of mine, so as soon as I learnt about having some server space on the university's server I got excited wanted to put something interesting. Since I already have " +
-                          "a boring about me page, I went " +
-                          "with something different and built a simple terminal emulator in React!");
-          this.addHistory("type `source` to view the source code");
+          this.addHistory("type `explode` to view the explode code");
       } else {
-          this.addHistory("cat: " +  arg + ": No such file or directory");
+          this.addHistory("view-cube: " +  arg + ": No such file or directory");
       }
   },
   openLink: function(link) {
@@ -51,14 +46,12 @@ var App = React.createClass({
   },
   showHelp: function() {
       this.addHistory("help - this help text");
-      this.addHistory("github - view my github profile");
-      this.addHistory("source - browse the code for this page");
+      this.addHistory("dimensions - Get dimensions of the current object");
+      this.addHistory("explode - Break up model");
       this.addHistory("intro - print intro message");
-      this.addHistory("blog - read some stuff that I've written");
       this.addHistory("clear - clear screen");
-      this.addHistory("cat - print contents of a file");
+      this.addHistory("view-cube - Add view cube ui to viewer");
       this.addHistory("ls - list files");
-      this.addHistory("resume - view my resume");
   },
   componentDidMount: function() {
       var term = this.refs.term.getDOMNode();

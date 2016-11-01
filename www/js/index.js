@@ -79,3 +79,5 @@ var tokenAjax = function(handleData) {
 function onError(error) {
     console.log('Error: ' + error);
 };
+
+module.exports = viewerFactory;
