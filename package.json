@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-forge-tutorial",
+  "version": "1.0.0",
+  "description": "Getting started with Forge Viewer API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+s-"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "request": "^2.72.0",
+    "babelify": "^5.0.4",
+    "react": "^0.13.1",
+    "reactify": "^1.1.0",
+    "uglify-js": "^2.4.20",
+    "underscore": "^1.8.3",
+    "serve-favicon": "^2.3.0"
+  },
+  "author": "Derrick Wilson-Duncan",
+  "license": "MIT",
+  "bugs": {
+    "url": " "
+  },
+  "homepage": " "
+}
