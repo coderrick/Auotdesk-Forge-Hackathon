@@ -16,6 +16,7 @@
     "request": "^2.72.0",
     "babelify": "^5.0.4",
     "react": "^0.13.1",
+    "react-term": "^0.0.0",
     "reactify": "^1.1.0",
     "uglify-js": "^2.4.20",
     "underscore": "^1.8.3",
