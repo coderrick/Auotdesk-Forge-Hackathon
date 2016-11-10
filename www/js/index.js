@@ -18,7 +18,7 @@
 
 var defaultUrn = 'dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bW9kZWwyMDE2LTExLTAxLTAxLTQwLTAwLWhrYmNvbndleDF0b2VpZ2FyemNnMXl4ZXp3eHIvRHJpbGwuZHdmeA';
 var tokenurl = window.location.protocol + '//' + window.location.host + '/api/token';
-
+console.log('from index.js');
 /////////////////////////////////////////////////////////////////////////////////
 //
 // Initialize function to the Viewer
@@ -51,7 +51,8 @@ function initialize() {
                 console.log('path ', pathInfoCollection.path3d[0].path);
                 
             viewer.load(pathInfoCollection.path3d[0].path);
-        }, onError);    
+        }, onError); 
+        module.exports = viewerFactory;   
 };
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -80,4 +81,3 @@ function onError(error) {
     console.log('Error: ' + error);
 };
 
-module.exports = viewerFactory;

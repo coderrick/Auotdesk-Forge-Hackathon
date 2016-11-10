@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "watchify -t reactify ./app.js -o ./www/js/main.min.js -v",
+    "watch": "watchify -t reactify ./terminal.js -o ./www/js/main.min.js -v",
     "start": "node server.js"
   },
   "repository": {
