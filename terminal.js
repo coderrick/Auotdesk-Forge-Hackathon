@@ -18,7 +18,7 @@ var App = React.createClass({
         'ls'    : this.listFiles,
         'intro' : this.showWelcomeMsg,
         'help'  : this.showHelp,
-        'view-cube': this.view-cube,
+        'view-cube': this.view_cube,
         'explode': this.explode,
         'dimensions': this.dimensions,
       }

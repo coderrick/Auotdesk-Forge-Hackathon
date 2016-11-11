@@ -51,8 +51,7 @@ function initialize() {
                 console.log('path ', pathInfoCollection.path3d[0].path);
                 
             viewer.load(pathInfoCollection.path3d[0].path);
-        }, onError); 
-        module.exports = viewerFactory;   
+        }, onError);   
 };
 
 /////////////////////////////////////////////////////////////////////////////////
